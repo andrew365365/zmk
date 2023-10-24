@@ -67,7 +67,7 @@
       bindings = <&kp RET>;
     };  
 
-    combo_ret {
+    combo_esc {
       timeout-ms = <50>;
       key-positions = <19 20>;
       bindings = <&kp ESC>;
