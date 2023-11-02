@@ -22,13 +22,7 @@
     //   mods = <(MOD_RSFT)>;
     // };
 // tap: backspace | shift + tap: delete | hold: num layer
-    bs_del_num: bs_del_num {
-      compatible = "zmk,behavior-mod-morph";
-      label = "BS_DEL_NUM";
-      #binding-cells = <0>;
-      bindings= <&lt NUM BSPC>, <&kp DEL>;
-      mods = <(MOD_RSFT|MOD_LSFT)>;
-    };
+
     qmark_morph: qmark_morph {
       compatible = "zmk,behavior-mod-morph";
       label = "QMARK_MORPH";
