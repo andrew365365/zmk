@@ -6,7 +6,7 @@
       timeout-ms = <50>;
       key-positions = <LM1 RM1>;
       bindings = <&caps_word>;
-      layers = <BASE>;
+      layers = <DEF>;
     };
 
     combo_sleep {
