@@ -12,6 +12,10 @@
 #define SYS 4
 #define MOUSE 5
 
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
+#define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2   // thumbs
+
 #include "includes/macros.dtsi"
 #include "includes/mods.dtsi"
 #include "includes/dance.dtsi"
@@ -44,14 +48,8 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
-#define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
-#define MEH LC(LS(LALT))
-#define CUT LS(DEL)
-#define COPY LC(INS)
-#define PASTE LS(INS)
+
 #define COMPOSE K_CMENU
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
@@ -139,7 +137,7 @@ ZMK_LAYER(mouse,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           ___           ___           ___           ___           ___               ___           ___           ___            ___          ___          
      // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                      ___           ___           ___               U_BTN2        U_BTN1        ___                                         
+                                      U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2                                         
      //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯                                          
 )
 /* vim: set filetype=c : */
