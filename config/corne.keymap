@@ -1,6 +1,6 @@
 /* source keypos definitions */
 
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../keys/36keys.h"
 /* activate bluetooth */
 /* source the main keymap */
 #include "example.keymap"
