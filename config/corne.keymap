@@ -9,3 +9,5 @@
 /* use 5-column layout for Zen */
 / { chosen { zmk,matrix_transform = &five_column_transform; }; };
 
+
+/* vim: set filetype=c : */
