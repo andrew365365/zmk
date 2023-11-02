@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+<<<<<<< HEAD
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -138,3 +139,16 @@
     };
   };
 };
+=======
+/* source keypos definitions */
+#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+
+
+/* activate bluetooth */
+/* source the main keymap */
+#include "example.keymap"
+
+/* use 5-column layout for Zen */
+/ { chosen { zmk,matrix_transform = &five_column_transform; }; };
+
+>>>>>>> 4c492f4 ( mod .keymap)
