@@ -22,13 +22,27 @@
     //   mods = <(MOD_RSFT)>;
     // };
 // tap: backspace | shift + tap: delete | hold: num layer
-
+    smart_shft: smart_shft {
+      compatible = "zmk,behavior-mod-morph";
+      label = "SMART_SHIFT";
+      #binding-cells = <0>;
+      bindings = <&sk LSHFT>, <&caps_word>;
+      mods = <(MOD_LSFT)>;
+    };
     qmark_morph: qmark_morph {
       compatible = "zmk,behavior-mod-morph";
       label = "QMARK_MORPH";
       #binding-cells = <0>;
       bindings = <&kp QMARK>, <&kp EXCL>;
       mods = <(MOD_RSFT|MOD_LSFT)>;
+    };
+    bs_del: bs_del {
+      compatible = "zmk,behavior-mod-morph";
+      label = "BS_DEL";
+      #binding-cells = <0>;
+      bindings = <&kp BSPC>, <&kp DEL>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      keep-mods = <MOD_RSFT>;
     };
   };
 };

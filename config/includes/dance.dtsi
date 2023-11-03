@@ -7,6 +7,59 @@
       tapping-term-ms = <200>;
       bindings = <&sk LSHFT>, <&caps_word>;
     };
+    smart_num: smart_num {
+      compatible = "zmk,behavior-hold-tap";
+      label = "SMART_NUM";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+      bindings = <&mo>, <&num_dance>;
+     };
+    num_dance: num_dance {
+      compatible = "zmk,behavior-tap-dance";
+      label = "NUM_DANCE";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&num_word>, <&sl NUM>;
+     };
+    smart_mouse: smart_mouse {
+      compatible = "zmk,behavior-tri-state";
+      label = "SMART_MOUSE";
+      #binding-cells = <0>;
+      bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+      ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RH0 RH1>;
+      ignored-layers = <MOUSE>
+     };
+    swapper: swapper {
+      compatible = "zmk,behavior-tri-state";
+      label = "SWAPPER";
+      #binding-cells = <0>;
+      bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+      ignored-key-positions = <LT2>;
+     };
+    sls: sls {
+      compatible = "zmk,behavior-sticky-key";
+      label = "SLS";
+      #binding-cells = <0>;
+      release-after-ms = <1000>;
+      bindings = <&uc_shift>;
+      ignore-modifiers; 
+    lt_spc: lt_spc {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_SPC";
+      #binding-cells = <0>;
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+      bindings = <&mo>, <&spc_morph>;
+     };
+    spc_morph: spc_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "SPC_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp SPACE>, <&dot_spc>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+     };
   };
 };
 
