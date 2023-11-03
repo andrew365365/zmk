@@ -31,12 +31,12 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - ESC
-  - {t: SPACE, h: Nav}
-  - TAB
+  - '&smart_mouse'
+  - '&lt_spc 1'
   - {t: RET, h: Fn}
-  - {t: BSPC, h: Num}
-  - '&ss_cw'
+  - {t: '&num_dance', h: Num}
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  - {t: BSPC, s: DEL}
   Nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -69,7 +69,7 @@ layers:
   - LS(INS)
   - CMENU
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,8 +107,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: PP, type: held}
+  - {type: held}
+  - PP
   - PREV
   - NEXT
   Num:
@@ -145,10 +145,10 @@ layers:
   - .
   - '0'
   - '-'
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  sys:
+  - {t: ▽, type: trans}
+  Sys:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -181,8 +181,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Mouse:
