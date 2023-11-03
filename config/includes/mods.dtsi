@@ -1,8 +1,4 @@
-#define HM_TAPPING_TERM 280
-#define HM_TAPPING_TERM_FAST 200
-
 / {
-
   behaviors {
 
     // Positional Homerow mods
@@ -72,4 +68,3 @@
 
   };
 };
-  /* vim: set filetype=c : */

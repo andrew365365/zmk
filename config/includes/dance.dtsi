@@ -43,7 +43,7 @@
     //   #binding-cells = <0>;
     //   release-after-ms = <1000>;
     //   bindings = <&uc_shift>;
-    //   ignore-modifiers;
+    //   ignore-modifiers; 
     //  };
     lt_spc: lt_spc {
       compatible = "zmk,behavior-hold-tap";
@@ -63,4 +63,4 @@
      };
   };
 };
-  /* vim: set filetype=c : */
+
