@@ -42,7 +42,7 @@
 &lt {  // layer-tap config
   flavor = "balanced";
   tapping-term-ms = <200>;
-  require-prior-idle = <175>;
+  require-prior-idle-ms = <175>;
 };
 
 &sl {  // sticky-layer config
