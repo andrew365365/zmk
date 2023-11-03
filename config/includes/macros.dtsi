@@ -12,4 +12,6 @@
         bindings = <&kp LG(X) &kp U &kp S>;
         )
   };
-};
+}
+  /* vim: set filetype=c : */
+

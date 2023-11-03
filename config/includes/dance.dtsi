@@ -37,14 +37,14 @@
       bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
       ignored-key-positions = <LT2>;
      };
-    sls: sls {
-      compatible = "zmk,behavior-sticky-key";
-      label = "SLS";
-      #binding-cells = <0>;
-      release-after-ms = <1000>;
-      bindings = <&uc_shift>;
-      ignore-modifiers; 
-     };
+    // sls: sls {
+    //   compatible = "zmk,behavior-sticky-key";
+    //   label = "SLS";
+    //   #binding-cells = <0>;
+    //   release-after-ms = <1000>;
+    //   bindings = <&uc_shift>;
+    //   ignore-modifiers;
+    //  };
     lt_spc: lt_spc {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_SPC";
@@ -63,4 +63,4 @@
      };
   };
 };
-
+  /* vim: set filetype=c : */
