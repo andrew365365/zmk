@@ -37,14 +37,6 @@
       bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
       ignored-key-positions = <LT2>;
      };
-    // sls: sls {
-    //   compatible = "zmk,behavior-sticky-key";
-    //   label = "SLS";
-    //   #binding-cells = <0>;
-    //   release-after-ms = <1000>;
-    //   bindings = <&uc_shift>;
-    //   ignore-modifiers; 
-    //  };
     lt_spc: lt_spc {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_SPC";
@@ -54,13 +46,5 @@
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&spc_morph>;
      };
-    spc_morph: spc_morph {
-      compatible = "zmk,behavior-mod-morph";
-      label = "SPC_MORPH";
-      #binding-cells = <0>;
-      bindings = <&kp SPACE>, <&dot_spc>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-     };
   };
 };
-

@@ -14,14 +14,6 @@
       bindings = <&kp DOT>, <&kp COLON>;
       mods = <(MOD_RSFT)>;
     };
-    // quote_morph: quote_morph {
-    //   compatible = "zmk,behavior-mod-morph";
-    //   label = "QUOTE_MORPH";
-    //   #binding-cells = <0>;
-    //   bindings = <&kp DQT>, <&kp SQT>;
-    //   mods = <(MOD_RSFT)>;
-    // };
-// tap: backspace | shift + tap: delete | hold: num layer
     smart_shft: smart_shft {
       compatible = "zmk,behavior-mod-morph";
       label = "SMART_SHIFT";
@@ -44,5 +36,12 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
       keep-mods = <MOD_RSFT>;
     };
+    spc_morph: spc_morph {
+      compatible = "zmk,behavior-mod-morph";
+      label = "SPC_MORPH";
+      #binding-cells = <0>;
+      bindings = <&kp SPACE>, <&dot_spc>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+     };
   };
 };
