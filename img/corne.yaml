@@ -31,12 +31,12 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - '&smart_mouse'
+  - {t: ▽, type: trans}
   - '&lt_spc 1'
   - {t: RET, h: Fn}
   - {t: ▽, type: trans}
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - {t: BSPC, s: DEL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
