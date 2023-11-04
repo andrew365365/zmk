@@ -31,7 +31,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - '&smart_mouse'
+  - {t: '*', h: Mouse}
   - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - {t: '&mkp MB1', type: held}
   - '&mkp MB3'
   - '&mkp MB2'
   - '&mkp MB1'
