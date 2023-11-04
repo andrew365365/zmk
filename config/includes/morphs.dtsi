@@ -40,7 +40,7 @@
       compatible = "zmk,behavior-mod-morph";
       label = "SPC_MORPH";
       #binding-cells = <0>;
-      bindings = <&kp SPACE>, <&dot_spc>;
+      bindings  = <&kp SPACE>, <&dot_spc>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
      };
   };
