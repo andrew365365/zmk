@@ -30,7 +30,7 @@
     )
 
 
-MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
+MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R KEYS_T)  // used for HRM-combo
 
 
 #include "includes/macros.dtsi"
