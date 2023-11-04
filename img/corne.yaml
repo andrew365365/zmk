@@ -275,7 +275,7 @@ combos:
   k: {t: TAB, h: LA(LCTRL)}
   l: [Def, Nav, Num]
 - p: [12, 13]
-  k: '&hml_repeat LS(LCTRL) 0'
+  k: {t: '&key_repeat', h: LS(LCTRL)}
   l: [Def, Nav, Num]
 - p: [1, 11]
   k: '@'
