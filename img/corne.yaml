@@ -32,11 +32,11 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: ▽, type: trans}
-  - '&lt_spc 1'
+  - {t: SPACE, h: Nav}
   - {t: RET, h: Fn}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  - {t: BSPC, s: DEL}
   Nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -69,7 +69,7 @@ layers:
   - LS(INS)
   - CMENU
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
