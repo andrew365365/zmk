@@ -32,7 +32,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - '&smart_mouse'
-  - {t: SPACE, h: Nav}
+  - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
