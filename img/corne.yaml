@@ -226,6 +226,8 @@ combos:
 - p: [13, 16]
   k: '&caps_word'
   l: [Def]
+- p: [1, 2]
+  k: ESC
 - p: [8, 9]
   k: '&win_sleep'
   l: [Nav]
