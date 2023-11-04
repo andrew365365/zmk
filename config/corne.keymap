@@ -3,7 +3,7 @@
 #include "keys/36keys.h"
 /* activate bluetooth */
 /* source the main keymap */
-#include "example.keymap"
+#include "base.keymap"
 
 /* use 5-column layout for Zen */
 / { chosen { zmk,matrix_transform = &five_column_transform; }; };
