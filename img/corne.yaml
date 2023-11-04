@@ -31,7 +31,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ▽, type: trans}
+  - '&smart_mouse'
   - {t: SPACE, h: Nav}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
