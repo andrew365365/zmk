@@ -161,8 +161,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - '*'
   - '&bootloader'
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -198,8 +198,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_HOR(-1250)'
