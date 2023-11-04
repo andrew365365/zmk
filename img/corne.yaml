@@ -34,7 +34,7 @@ layers:
   - '&smart_mouse'
   - '&lt_spc 1'
   - {t: RET, h: Fn}
-  - {t: '&num_dance', h: Num}
+  - {t: ▽, type: trans}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   Nav:
@@ -145,7 +145,7 @@ layers:
   - .
   - '0'
   - '-'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Sys:
@@ -182,7 +182,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Mouse:
