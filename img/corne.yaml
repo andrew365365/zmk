@@ -267,61 +267,61 @@ combos:
   l: [Def]
 - p: [1, 2]
   k: ESC
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [2, 3]
   k: RETURN
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [11, 12]
   k: {t: TAB, h: LA(LCTRL)}
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [12, 13]
   k: {t: '&key_repeat', h: LS(LCTRL)}
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [1, 11]
   k: '@'
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [2, 12]
   k: '#'
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [3, 13]
   k: $
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [4, 14]
   k: '%'
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [11, 21]
   k: '`'
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [12, 22]
   k: \
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [13, 23]
   k: '='
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [14, 24]
   k: '~'
-  l: [Def, Nav, Num]
+  l: [Def, Num]
 - p: [5, 15]
   k: ^
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [6, 16]
   k: +
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [7, 17]
   k: '*'
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [8, 18]
   k: '&'
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [15, 25]
   k: _
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [16, 26]
   k: '-'
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [17, 27]
   k: /
-  l: [Def, Nav, Num]
+  l: [Def]
 - p: [18, 28]
   k: '|'
-  l: [Def, Nav, Num]
+  l: [Def]
