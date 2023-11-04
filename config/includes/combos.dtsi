@@ -23,6 +23,12 @@
       layers = <DEF>;
     };
 
+    combo_esc{
+      timeout-ms = <50>;
+      key-positions = <LT3 LT2>;
+      bindings = <&kp ESC>;
+    };
+
     combo_sleep {
       timeout-ms = <50>;
       key-positions = <RT3 RT4>;
