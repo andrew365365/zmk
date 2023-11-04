@@ -115,7 +115,7 @@
        // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                      // &smart_mouse  &lt_spc NAV   &lt FN RET        ___           &smart_shft   &bs_del
        //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-                                        &smart_mouse  &lt NAV SPACE  &lt FN RET       SMART_NUM     &smart_shft   &bs_del
+                                        &smart_mouse  &lt_spc NAV 0     &lt FN RET       SMART_NUM     &smart_shft   &bs_del
       >;
     };
 
