@@ -36,7 +36,7 @@ layers:
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - '&lt_bs_del 4 0'
+  - {t: BSPC, h: Sys, s: DEL}
   Nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,10 +181,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
