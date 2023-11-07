@@ -46,5 +46,14 @@
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&spc_morph>;
      };
+lt_spc: lt_spc {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_SPC";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      require-prior-idle-ms = <175>;
+      bindings = <&mo>, <&spc_morph>;
+     };
   };
 };
