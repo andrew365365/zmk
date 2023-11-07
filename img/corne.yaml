@@ -31,17 +31,17 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: '*', h: Mouse}
+  - '&smart_mouse'
   - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - {t: BSPC, s: DEL}
+  - '&lt_bs_del 4 0'
   Nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LS(TAB)
+  - '&swapper'
   - {t: ▽, type: trans}
   - PG UP
   - PG DN
@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
+  - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
   - '&mkp MB1'
