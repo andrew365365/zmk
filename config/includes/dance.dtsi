@@ -46,14 +46,14 @@
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&spc_morph>;
      };
-lt_spc: lt_spc {
+    lt_bs_del: lt_bs_del {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT_SPC";
+      label = "LT_BS_DEL";
       #binding-cells = <2>;
       flavor = "balanced";
       tapping-term-ms = <200>;
       require-prior-idle-ms = <175>;
-      bindings = <&mo>, <&spc_morph>;
+      bindings = <&mo>, <&bs_del>;
      };
   };
 };
