@@ -141,14 +141,14 @@
       >;
     };
 
-    mouse_layer {
-      label = "Mouse";
-      bindings = <
-            ___           ___           ___           ___           ___               ___           U_WH_D        U_MS_U         U_WH_U       ___          
-            ___           ___           &kp STAR      &kp STAR      ___               ___           U_MS_L        U_MS_D         U_MS_R       ___          
-            ___           ___           ___           ___           ___               ___           ___           ___            ___          ___          
-                                        U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2                                         
-    >;
+    // mouse_layer {
+    //   label = "Mouse";
+    //   bindings = <
+    //         ___           ___           ___           ___           ___               ___           U_WH_D        U_MS_U         U_WH_U       ___          
+    //         ___           ___           &kp STAR      &kp STAR      ___               ___           U_MS_L        U_MS_D         U_MS_R       ___          
+    //         ___           ___           ___           ___           ___               ___           ___           ___            ___          ___          
+    //                                     U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2                                         
+    // >;
     };
  };
 };
