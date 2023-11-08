@@ -37,15 +37,15 @@
       tapping-term-ms = <200>;
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&spc_morph>;
-     };
-    lt_bs_del: lt_bs_del {
+     }
+    lt_esc: lt_esc {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT_BS_DEL";
+      label = "LT_ESC";
       #binding-cells = <2>;
       flavor = "balanced";
       tapping-term-ms = <200>;
       require-prior-idle-ms = <175>;
-      bindings = <&mo>, <&bs_del>;
-     };
+      bindings = <&mo>, <&esc_tab>;
+     };;
   };
 };

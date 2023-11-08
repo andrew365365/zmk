@@ -9,7 +9,7 @@
 
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
 #define NAV 1
-#define FN 2
+#define FN  2
 #define NUM 3
 #define SYS 4
 // #define MOUSE 5
@@ -50,19 +50,17 @@
 &sl {  // sticky-layer config
     ignore-modifiers;          // allow chording sticky mods & layers
 };
-#define FZLEFT LC(LS(LG(LEFT)))
-#define FZRIGHT LC(LS(LG(RIGHT)))
-#define MEH LC(LS(LALT))
-#define CUT LS(DEL)
-#define COPY LC(INS)
-#define PASTE LS(INS)
+#define FZLEFT  LC(LA(LG(LEFT)))
+#define FZRIGHT LC(LA(LG(RIGHT)))
+#define FZWIN   LG(PG_UP)            // desktop manager
+#define MEH     LC(LS(LALT))
+#define PASTE   LS(INS)
 #define COMPOSE K_CMENU
+#define CANCEL  K_CANCEL             // cancel caps-word, num-word and smart-mouse
 
 // misc aliases
-#define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
 #define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
-#define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
-#define DSK_MGR     &kp LA(GRAVE)            // desktop manager
+#define DSK_NEXT    &hmr LALT  LG(LC(RIGHT))  // next     desktop
 
 &caps_word {  // mods deactivate caps-word, requires PR #1451
     /delete-property/ ignore-modifiers;
@@ -79,14 +77,7 @@
 
 /* keymap */
 / {
-   conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <FN NUM>;
-            then-layer = <SYS>;
-        };
-     };
-
+   
   keymap {
     compatible = "zmk,keymap";
 
@@ -96,7 +87,7 @@
             &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
             &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SQT
             &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &qmark_morph
-                                        &lt SYS ESC   &lt_spc NAV 0 &lt FN RET        SMART_NUM     &smart_shft   &bs_del
+                                        &lt_esc SYS 0   &lt_spc NAV 0 &lt FN RET        SMART_NUM     &smart_shft   &bs_del
       >;
     };
 
@@ -104,18 +95,18 @@
       label = "Nav";
       bindings = <
             &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          &kp PG_UP     &kp PG_DN     &kp HOME      &kp END       ___         
-            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(TAB)       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp DEL      
-            ___           ___           &kp K_REDO   &kp K_UNDO     &kp ESC           ___           &kp CUT       &kp COPY      &kp PASTE     &kp COMPOSE
-                                        ___           ___           ___               ___           ___           CANCEL
+            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB) )  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp DEL      
+            ___           ___           &kp K_REDO    &kp K_UNDO    &kp ESC           ___           &kp CUT       &kp COPY      &kp PASTE     &kp COMPOSE
+                                        ___           ___           ___               ___           ___           &kp CANCEL
       >;
     };
 
     fn_layer {
       label = "Fn";
       bindings = <
-            &kp F12       &kp F7        &kp F8        &kp F9        ___               &kp FZLEFT    &kp FZRIGHT   ___           ___           &win_sleep   
-            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               DSK_MGR       DSK_PREV      DSK_NEXT      ___           ___
-            &kp F10       &kp F1        &kp F2        &kp F3        ___               &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  ___           &tog SYS
+            &kp F12       &kp F7        &kp F8        &kp F9        ___               ___           &kp FZLEFT    &kp FZRIGHT   FZWIN         &win_sleep   
+            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               ___           DSK_PREV      DSK_NEXT      ___           ___
+            &kp F10       &kp F1        &kp F2        &kp F3        ___               &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  ___           ___
                                         ___           ___           ___               &kp C_PP      &kp C_PREV    &kp C_NEXT                               
     >;
     };
@@ -135,7 +126,7 @@
       bindings = <
                                       _BT_SEL_KEYS_                                   ___           ___           ___           ___           ___          
             ___           ___           &kp STAR      &kp STAR      &bootloader       &bootloader   ___           ___           ___           ___          
-            ___           ___           ___           ___           &sys_reset        &sys_reset    ___           ___           ___           &tog DEF          
+            ___           ___           ___           ___           &sys_reset        &sys_reset    ___           ___           ___           ___          
                                         ___           ___           ___               ___           ___           ___                                      
       >;
     };

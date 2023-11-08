@@ -43,5 +43,13 @@
       bindings  = <&kp SPACE>, <&dot_spc>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
      };
+    esc_tab: esc_tab {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ESC_TAB";
+      #binding-cells = <0>;
+      bindings = <&kp ESC>, <&kp TAB>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      keep-mods = <MOD_RSFT>;
+    };
   };
 };
