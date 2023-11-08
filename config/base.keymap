@@ -112,7 +112,7 @@
     };
 
     fn_layer {
-      label = "Fn";
+      label = "Fn";
       bindings = <
             &kp F12       &kp F7        &kp F8        &kp F9        ___               &kp FZLEFT    &kp FZRIGHT   ___           ___           &win_sleep   
             &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               DSK_MGR       DSK_PREV      DSK_NEXT      ___           ___
