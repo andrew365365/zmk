@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   Def:
   - Q
@@ -31,18 +31,18 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ESC, h: Mouse}
+  - {t: ESC, h: Sys}
   - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   Nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LS(TAB)
+  - LC(W)
+  - LS(LC(TAB))
+  - LC(TAB)
+  - LC(T)
   - '&swapper'
-  - {t: ▽, type: trans}
   - PG UP
   - PG DN
   - HOME
@@ -52,7 +52,7 @@ layers:
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - {t: ▽, type: trans}
+  - LS(TAB)
   - LEFT
   - DOWN
   - UP
@@ -60,9 +60,9 @@ layers:
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - REDO
+  - UNDO
+  - ESC
   - {t: ▽, type: trans}
   - LS(DEL)
   - LC(INS)
@@ -73,15 +73,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CANCEL
   Fn:
   - F12
   - F7
   - F8
   - F9
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LC(LS(LG(LEFT)))
+  - LC(LS(LG(RIGHT)))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&win_sleep'
@@ -104,7 +104,7 @@ layers:
   - VOL DN
   - VOL UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sys
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -178,50 +178,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - Def
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mwh SCROLL_VERT(-100)'
-  - '&mmv MOVE_VERT(-1250)'
-  - '&mwh SCROLL_VERT(100)'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '*'
-  - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_HOR(-1250)'
-  - '&mmv MOVE_VERT(1250)'
-  - '&mmv MOVE_HOR(1250)'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
 combos:
 - p: [13, 16]
   k: '&caps_word'
