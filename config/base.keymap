@@ -149,7 +149,7 @@
     //         ___           ___           ___           ___           ___               ___           ___           ___            ___          ___          
     //                                     U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2                                         
     // >;
-    };
+   // };
  };
 };
   /* vim: set filetype=c : */
