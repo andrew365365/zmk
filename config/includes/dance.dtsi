@@ -46,6 +46,6 @@
       tapping-term-ms = <200>;
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&esc_tab>;
-     };;
+     };
   };
 };
