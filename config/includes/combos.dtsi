@@ -82,7 +82,7 @@ ZMK_COMBO(minus, &kp MINUS,     LB0 LB1,     DEF, COMBO_TERM_SLOW)
 /* Horizontal combos - right hand */
 ZMK_COMBO(pipe,  &kp PIPE,      RB0 RB1,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(amps,  &kp AMPS,      RT0 RT1,     DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(bslh,  &kp BSLH,      RM1 RM2,     DEF  NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(bslh,  &kp BSLH,      RB1 RB2,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(fslh,  &kp FSLH,      RB2 RB3,     DEF, COMBO_TERM_SLOW)
 
 /* Vertical combos - left hand */
