@@ -37,7 +37,7 @@
       tapping-term-ms = <200>;
       require-prior-idle-ms = <175>;
       bindings = <&mo>, <&spc_morph>;
-     }
+     };
     lt_esc: lt_esc {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC";
