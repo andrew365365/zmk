@@ -31,7 +31,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ESC, h: Sys}
+  - {t: ESC, h: Sys, s: TAB}
   - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
   - {t: '&num_dance', h: Num}
@@ -52,7 +52,7 @@ layers:
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - LS(TAB)
+  - '&kp LS(LA(TAB) )'
   - LEFT
   - DOWN
   - UP
@@ -64,10 +64,10 @@ layers:
   - UNDO
   - ESC
   - {t: ▽, type: trans}
-  - LS(DEL)
-  - LC(INS)
-  - LS(INS)
-  - CMENU
+  - CUT
+  - COPY
+  - PASTE
+  - COMPOSE
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -80,19 +80,19 @@ layers:
   - F8
   - F9
   - {t: ▽, type: trans}
-  - LC(LS(LG(LEFT)))
-  - LC(LS(LG(RIGHT)))
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - FZLEFT
+  - FZRIGHT
+  - FZWIN
   - '&win_sleep'
   - {t: F11, h: LGUI}
   - {t: F4, h: LALT}
   - {t: F5, h: LCTRL}
   - {t: F6, h: LSHFT}
   - {t: ▽, type: trans}
-  - LA(GRAVE)
-  - {t: LG(LC(LEFT)), h: RSHFT}
-  - {t: LG(LC(RIGHT)), h: LALT}
+  - {t: ▽, type: trans}
+  - {t: DSK_PRV, h: RSHFT}
+  - {t: DSK_NXT, h: LALT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
@@ -104,7 +104,7 @@ layers:
   - VOL DN
   - VOL UP
   - {t: ▽, type: trans}
-  - Sys
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -178,7 +178,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Def
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -186,21 +186,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [13, 16]
-  k: '&caps_word'
-  l: [Def]
 - p: [1, 2]
   k: ESC
-- p: [8, 9]
-  k: '&win_sleep'
-  l: [Nav]
-- p: [22, 21]
-  k: LC(C)
-- p: [23, 22]
-  k: LC(V)
-- p: [32, 33]
-  k: '&dot_spc'
-  l: [Def]
 - p: [15, 16]
   k: '='
   l: [Def]
@@ -222,35 +209,23 @@ combos:
 - p: [17, 18]
   k: )
   l: [Def]
-- p: [26, 27]
-  k: <
-  l: [Def]
-- p: [27, 28]
-  k: '>'
-  l: [Def]
-- p: [1, 2]
-  k: ESC
-  l: [Def, Num]
-- p: [2, 3]
-  k: RETURN
-  l: [Def, Num]
 - p: [4, 3]
   k: +
   l: [Def]
 - p: [24, 23]
   k: '-'
   l: [Def]
-- p: [11, 12]
-  k: {t: TAB, h: LA(LCTRL)}
-  l: [Def, Num]
-- p: [12, 13]
-  k: {t: '&key_repeat', h: LS(LCTRL)}
-  l: [Def, Num]
 - p: [25, 26]
   k: '|'
   l: [Def]
 - p: [5, 6]
   k: '&'
+  l: [Def]
+- p: [16, 17]
+  k: \
+  l: [Def, Num]
+- p: [27, 28]
+  k: /
   l: [Def]
 - p: [1, 11]
   k: '@'
@@ -267,9 +242,6 @@ combos:
 - p: [11, 21]
   k: '`'
   l: [Def, Num]
-- p: [12, 22]
-  k: \
-  l: [Def, Num]
 - p: [13, 23]
   k: '='
   l: [Def, Num]
@@ -284,7 +256,4 @@ combos:
   l: [Def]
 - p: [15, 25]
   k: _
-  l: [Def]
-- p: [17, 27]
-  k: /
   l: [Def]
