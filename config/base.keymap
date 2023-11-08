@@ -106,7 +106,7 @@
       bindings = <
             &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          &kp PG_UP     &kp PG_DN     &kp HOME      &kp END       ___         
             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(TAB)       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp DEL      
-            ___           ___           & kp K_REDO   &kp K_UNDO    ESC               ___           &kp CUT       &kp COPY      &kp PASTE     &kp COMPOSE
+            ___           ___           & kp K_REDO   &kp K_UNDO    &kp ESC           ___           &kp CUT       &kp COPY      &kp PASTE     &kp COMPOSE
                                         ___           ___           ___               ___           ___           CANCEL
       >;
     };
