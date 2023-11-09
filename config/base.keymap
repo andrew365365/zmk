@@ -8,9 +8,9 @@
 #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
 
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
-#define NAV 1
-#define FN  2
-#define NUM 3
+#define NUM 1
+#define NAV 2
+#define FN  3
 #define SYS 4
 // #define MOUSE 5
 
