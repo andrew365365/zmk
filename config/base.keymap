@@ -129,7 +129,7 @@ ZMK_COMBO(rbrk,  &kp RBKT,      RB2 RB3,     DEF, COMBO_TERM_SLOW)
       bindings = <
             &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          ___           &kp FZLEFT    &kp FZRIGHT   &kp FZWIN   &kp CANCEL 
             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   ___
-            &kp COMPOSE   &kp PG_DN     &kp PG_UP     &kp HOME      &kp END           ___           DSK_PREV      DSK_NEXT      ___         ___
+            &kp COMPOSE   &kp PG_DN     &kp PG_UP     &kp HOME      &kp END           ___           &kp DSK_PREV  &kp DSK_NEXT  ___         ___
                                         ___           ___           ___               ___           ___           ___
       >;
     };
