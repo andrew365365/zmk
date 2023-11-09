@@ -57,7 +57,7 @@
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 /* Horizontal combos - left hand */
-ZMK_COMBO(esc,   &kp ESC,       LT0 LT1,     ALL, COMBO_TERM_SLOW)
+ZMK_COMBO(esc,   &kp ESC,       LT0 LT1,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(minus, &kp MINUS,     LB0 LB1,     DEF, COMBO_TERM_SLOW)
 /* Horizontal combos - right hand */
 ZMK_COMBO(amps,  &kp AMPS,      RT0 RT1,     DEF, COMBO_TERM_SLOW)
