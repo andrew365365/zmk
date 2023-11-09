@@ -95,7 +95,7 @@
       bindings = <
             &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          ___           &kp PG_DN     &kp PG_UP     &kp HOME      &kp END
             &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     ___
-            ___           ___           &kp LC(Z)   &kp LC(Y)       &kp ESC           ___           ___           ___           &kp CANCEL    &kp COMPOSE
+            ___           ___           ___           ___           ___               ___           ___           ___           &kp CANCEL    &kp COMPOSE
                                         ___           ___           ___               ___           ___           ___
       >;
     };
