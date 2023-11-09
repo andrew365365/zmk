@@ -2,7 +2,7 @@
 
 set -e
 
-LAYERS="Def Nav Fn Num Sys"
+LAYERS="Def Num Nav Fn Sys"
 
 draw() {
 	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml

@@ -22,7 +22,6 @@
 #include "includes/macros.dtsi"
 #include "includes/mods.dtsi"
 #include "includes/dance.dtsi"
-#include "includes/combos.dtsi"
 #include "includes/morphs.dtsi" // requires layer aliases
 // #include "includes/mouse.dtsi"
 
@@ -73,6 +72,31 @@
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
 
+/*                KEY POSITIONS
+
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
+          ╰─────────────╯ ╰─────────────╯ */
+
+// use require-prior-idle-ms for combos
+#undef COMBO_HOOK
+#define COMBO_HOOK require-prior-idle-ms = <150>;
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+/* Horizontal combos - left hand */
+ZMK_COMBO(esc,   &kp ESC,       LT0 LT1,     DEF NAV NUM FN SYS, COMBO_TERM_SLOW)
+/* Horizontal combos - right hand */
+ZMK_COMBO(amps,  &kp AMPS,      RT0 RT1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(lbrc,  &kp LBRC,      RT1 RT2,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rbrc,  &kp RBRC,      RT2 RT3,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(lpar,  &kp LPAR,      RM1 RM2,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rpar,  &kp RPAR,      RM2 RM3,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(pipe,  &kp PIPE,      RB0 RB1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(lbrk,  &kp LBKT,      RB1 RB2,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rbrk,  &kp RBKT,      RB2 RB3,     DEF, COMBO_TERM_SLOW)
 
 /* keymap */
 / {
@@ -87,6 +111,16 @@
             &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SQT
             &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &qmark_morph
                                         SMART_NUM     &lt_esc SYS 0 &lt_spc NAV 0     &lt FN RET    &smart_shft   &bs_del
+      >;
+    };
+
+    num_layer {
+    label = "Num";
+      bindings = <
+        &kp PLUS      &kp N7        &kp N8        &kp N9        &kp FSLH         &kp BSLH      &kp DLLR      &kp GRAVE     &kp HASH      ___
+        &kp AT        &kp N4        &kp N5        &kp N6        &kp N0           &kp EQUAL     &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+        &kp MINUS     &kp N1        &kp N2        &kp N3        &kp STAR         &kp PRCNT     &kp UNDER     &kp CARET     &kp TILDE     ___
+      ___           ___           ___              ___           ___           ___
       >;
     };
 
@@ -110,15 +144,6 @@
     >;
     };
 
-    num_layer {
-      label = "Num";
-      bindings = <
-            &kp PLUS      &kp N7        &kp N8        &kp N9        &kp FSLH         &kp BSLH      &kp DLLR      &kp GRAVE     &kp HASH      ___
-            &kp AT        &kp N4        &kp N5        &kp N6        &kp N0           &kp EQUAL     &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-            &kp MINUS     &kp N1        &kp N2        &kp N3        &kp STAR         &kp PRCNT     &kp UNDER     ___           &kp CARET     &kp TILDE
-                                        ___           ___           ___              ___           ___           ___
-      >;
-    };
 
     sys_layer {
       label = "Sys";
