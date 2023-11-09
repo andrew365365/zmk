@@ -298,6 +298,6 @@ parse_config:
     "LALT": "ALT"
     "LCTRL": "CTRL"
     "LSHT": "SHIFT"
-    "LS(LA(TAB) )": "APP_PRV"
+    "LS(LA(TAB))": "APP_PRV"
     "&swapper": "APP_NXT"
   zmk_combos: {}
