@@ -31,10 +31,10 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: '&num_dance', h: Fn}
+  - {t: '&num_dance', h: Num}
   - {t: ESC, h: Sys, s: TAB}
-  - {t: SPACE, h: Num, s: '&dot_spc'}
-  - {t: RET, h: Nav}
+  - {t: SPACE, h: Nav, s: '&dot_spc'}
+  - {t: RET, h: Fn}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   Num:
@@ -68,9 +68,9 @@ layers:
   - ^
   - '~'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,8 +107,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Fn:
@@ -142,10 +142,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Sys:
@@ -188,7 +188,7 @@ layers:
 combos:
 - p: [4, 3]
   k: ESC
-  l: [Def, Num, Fn, Nav, Sys]
+  l: [Def, Nav, Num, Fn, Sys]
 - p: [5, 6]
   k: '&'
   l: [Def]
