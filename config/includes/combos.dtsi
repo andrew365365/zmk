@@ -10,55 +10,10 @@
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <150>;
-
-
-/ {
-  combos {
-    compatible = "zmk,combos";
-
-
-    combo_equal {
-      timeout-ms = <50>;
-      key-positions = <RM0 RM1>;
-      bindings = <&kp EQUAL>;
-      layers = <DEF>;
-    };
-
-    combo_lbkt {
-      timeout-ms = <50>;
-      key-positions = <RT1 RM1>;
-      bindings = <&kp LBKT>;
-      layers = <DEF>;
-    };
-
-    combo_rbkt {
-      timeout-ms = <50>;
-      key-positions = <RT3 RM3>;
-      bindings = <&kp RBKT>;
-      layers = <DEF>;
-    };
-   
-    combo_lpar {
-      timeout-ms = <50>;
-      key-positions = <RM1 RM2>;
-      bindings = <&kp LPAR>;
-      layers = <DEF>;
-    };
-
-    combo_rpar {
-      timeout-ms = <50>;
-      key-positions = <RM2 RM3>;
-      bindings = <&kp RPAR>;
-      layers = <DEF>;
-    };
-  };
-};
-
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 /* Horizontal combos - left hand */
-ZMK_COMBO(esc,   &kp ESC,       LT0 LT1,     DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(minus, &kp MINUS,     LB0 LB1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(esc,   &kp ESC,       LT0 LT1,     DEF NAV NUM FN SYS, COMBO_TERM_SLOW)
 /* Horizontal combos - right hand */
 ZMK_COMBO(amps,  &kp AMPS,      RT0 RT1,     DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(lbrc,  &kp LBRC,      RT1 RT2,     DEF, COMBO_TERM_SLOW)
