@@ -110,26 +110,26 @@ ZMK_COMBO(rbrk,  &kp RBKT,      RB2 RB3,     DEF, COMBO_TERM_SLOW)
             &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
             &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SQT
             &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &qmark_morph
-                                        SMART_NUM     &lt_esc SYS 0 &lt_spc NAV 0     &lt FN RET    &smart_shft   &bs_del
+                                        &lt_esc SYS 0 SMART_NUM0    &lt_spc NAV 0     &lt FN RET    &smart_shft   &bs_del
       >;
     };
 
     num_layer {
     label = "Num";
       bindings = <
-        &kp PLUS      &kp N7        &kp N8        &kp N9        &kp FSLH         &kp BSLH      &kp DLLR      &kp GRAVE     &kp HASH      ___
-        &kp AT        &kp N4        &kp N5        &kp N6        &kp N0           &kp EQUAL     &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-        &kp MINUS     &kp N1        &kp N2        &kp N3        &kp STAR         &kp PRCNT     &kp UNDER     &kp CARET     &kp TILDE     ___
-      ___           ___           ___              ___           ___           ___
+        &kp PLUS          &kp N7        &kp N8        &kp N9        &kp FSLH          &kp BSLH      &kp DLLR      &kp GRAVE     &kp HASH      ___
+        &kp AT            &kp N4        &kp N5        &kp N6        &kp N0            &kp EQUAL     &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+        &kp MINUS         &kp N1        &kp N2        &kp N3        &kp STAR          &kp PRCNT     &kp UNDER     &kp CARET     &kp TILDE     ___
+                                    ___           ___           ___                   ___           ___           ___
       >;
     };
 
     nav_layer {
       label = "Nav";
       bindings = <
-            &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          ___           &kp PG_DN     &kp PG_UP     &kp HOME      &kp END
-            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     ___
-            ___           ___           ___           ___           ___               ___           ___           ___           &kp CANCEL    &kp COMPOSE
+            &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          ___           &kp FZLEFT    &kp FZRIGHT   &kp FZWIN   &kp CANCEL 
+            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   ___
+            &kp COMPOSE   &kp PG_DN     &kp PG_UP     &kp HOME      &kp END           ___           DSK_PREV      DSK_NEXT      ___         ___
                                         ___           ___           ___               ___           ___           ___
       >;
     };
@@ -137,9 +137,9 @@ ZMK_COMBO(rbrk,  &kp RBKT,      RB2 RB3,     DEF, COMBO_TERM_SLOW)
     fn_layer {
       label = "Fn";
       bindings = <
-            &kp F12       &kp F7        &kp F8        &kp F9        ___               &kp FZLEFT    ___           &kp FZWIN     &kp FZRIGHT   &kp C_MUTE
-            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               DSK_PREV      ___           DSK_NEXT      ___           &kp C_VOL_UP
-            &kp F10       &kp F1        &kp F2        &kp F3        ___               ___           &kp C_PP      &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN
+            &kp F12       &kp F7        &kp F8        &kp F9        ___               &kp C_MUTE    &kp C_PP      ___           ___         ___  
+            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               &kp C_VOL_UP  &kp C_PREV    ___           ___         ___  
+            &kp F10       &kp F1        &kp F2        &kp F3        ___               &kp C_VOL_DN  &kp C_NEXT    ___           ___         ___  
                                         ___           ___           ___               ___           ___           ___
     >;
     };
