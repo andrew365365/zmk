@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - {t: A, h: WIN}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
   - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHFT}
-  - {t: K, h: LCTRL}
-  - {t: L, h: LALT}
-  - {t: '''', h: LGUI}
+  - {t: K, h: CTRL}
+  - {t: L, h: ALT}
+  - {t: '''', h: WIN}
   - Z
   - X
   - C
@@ -38,19 +38,19 @@ layers:
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   Nav:
-  - LC(W)
-  - LS(LC(TAB))
-  - LC(TAB)
-  - LC(T)
+  - TAB_CLS
+  - TAB_PRV
+  - TAB_NXT
+  - TAB_NEW
   - '&swapper'
   - PG UP
   - PG DN
   - HOME
   - END
   - {t: ▽, type: trans}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
+  - {t: WIN, h: sticky}
+  - {t: ALT, h: sticky}
+  - {t: CTRL, h: sticky}
   - {t: LSHFT, h: sticky}
   - '&kp LS(LA(TAB) )'
   - LEFT
@@ -85,14 +85,14 @@ layers:
   - FZRIGHT
   - FZWIN
   - '&win_sleep'
-  - {t: F11, h: LGUI}
-  - {t: F4, h: LALT}
-  - {t: F5, h: LCTRL}
+  - {t: F11, h: WIN}
+  - {t: F4, h: ALT}
+  - {t: F5, h: CTRL}
   - {t: F6, h: LSHFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: DSK_PRV, h: RSHFT}
-  - {t: DSK_NXT, h: LALT}
+  - {t: DSK_NXT, h: ALT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
@@ -129,9 +129,9 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: RSHFT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LGUI, h: sticky}
+  - {t: CTRL, h: sticky}
+  - {t: ALT, h: sticky}
+  - {t: WIN, h: sticky}
   - RET
   - '1'
   - '2'
