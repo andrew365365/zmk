@@ -117,17 +117,17 @@ layers:
   - '8'
   - '9'
   - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
+  - $
+  - '`'
+  - '#'
   - {t: ▽, type: trans}
   - '@'
   - '4'
   - '5'
   - '6'
   - '0'
-  - {t: ▽, type: trans}
+  - '='
   - {t: RSHFT, h: sticky}
   - {t: CTRL, h: sticky}
   - {t: ALT, h: sticky}
@@ -137,11 +137,11 @@ layers:
   - '2'
   - '3'
   - '*'
+  - '%'
+  - _
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ^
+  - '~'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -198,6 +198,9 @@ combos:
 - p: [7, 8]
   k: '}'
   l: [Def]
+- p: [15, 16]
+  k: '='
+  l: [Def, Num]
 - p: [16, 17]
   k: (
   l: [Def]
@@ -212,31 +215,4 @@ combos:
   l: [Def]
 - p: [27, 28]
   k: ']'
-  l: [Def]
-- p: [2, 12]
-  k: '#'
-  l: [Def, Num]
-- p: [3, 13]
-  k: $
-  l: [Def, Num]
-- p: [4, 14]
-  k: '%'
-  l: [Def, Num]
-- p: [11, 21]
-  k: '`'
-  l: [Def, Num]
-- p: [13, 23]
-  k: '='
-  l: [Def, Num]
-- p: [14, 24]
-  k: '~'
-  l: [Def, Num]
-- p: [5, 15]
-  k: ^
-  l: [Def]
-- p: [7, 17]
-  k: '*'
-  l: [Def]
-- p: [15, 25]
-  k: _
   l: [Def]
