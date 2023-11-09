@@ -32,7 +32,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: ESC, h: Sys, s: TAB}
-  - '&smart_num 3 0 0'
+  - {t: '&num_dance', h: Fn}
   - {t: SPACE, h: Num, s: '&dot_spc'}
   - {t: RET, h: Nav}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -101,8 +101,8 @@ layers:
   - HOME
   - END
   - {t: ▽, type: trans}
-  - {t: DSK_PRV, h: RSHFT}
-  - {t: DSK_NXT, h: ALT}
+  - DSK_PRV
+  - DSK_NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -143,7 +143,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
