@@ -31,10 +31,10 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
+  - {t: '&num_dance', h: Num}
   - {t: ESC, h: Sys, s: TAB}
   - {t: SPACE, h: Nav, s: '&dot_spc'}
   - {t: RET, h: Fn}
-  - {t: '&num_dance', h: Num}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   Nav:
@@ -43,11 +43,11 @@ layers:
   - TAB_NXT
   - TAB_NEW
   - '&swapper'
-  - PG UP
+  - {t: ▽, type: trans}
   - PG DN
+  - PG UP
   - HOME
   - END
-  - {t: ▽, type: trans}
   - {t: WIN, h: sticky}
   - {t: ALT, h: sticky}
   - {t: CTRL, h: sticky}
@@ -57,95 +57,95 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - REDO
-  - UNDO
+  - {t: ▽, type: trans}
+  - LC(Z)
+  - LC(Y)
   - ESC
   - {t: ▽, type: trans}
-  - CUT
-  - COPY
-  - PASTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CANCEL
   - COMPOSE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CANCEL
   Fn:
   - F12
   - F7
   - F8
   - F9
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - FZLEFT
-  - FZRIGHT
+  - {t: ▽, type: trans}
   - FZWIN
-  - '&win_sleep'
+  - FZRIGHT
+  - MUTE
   - {t: F11, h: WIN}
   - {t: F4, h: ALT}
   - {t: F5, h: CTRL}
   - {t: F6, h: LSHFT}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: DSK_PRV, h: RSHFT}
+  - {t: ▽, type: trans}
   - {t: DSK_NXT, h: ALT}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL UP
   - F10
   - F1
   - F2
   - F3
   - {t: ▽, type: trans}
-  - MUTE
-  - VOL DN
-  - VOL UP
   - {t: ▽, type: trans}
+  - PP
+  - PREV
+  - NEXT
+  - VOL DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - PP
-  - PREV
-  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Num:
-  - ESC
+  - +
   - '7'
   - '8'
   - '9'
-  - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - TAB
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - {t: ▽, type: trans}
-  - {t: RSHFT, h: sticky}
-  - {t: CTRL, h: sticky}
-  - {t: ALT, h: sticky}
-  - {t: WIN, h: sticky}
-  - RET
-  - '1'
-  - '2'
-  - '3'
   - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - .
+  - '@'
+  - '4'
+  - '5'
+  - '6'
   - '0'
+  - {t: ▽, type: trans}
+  - {t: RSHFT, h: sticky}
+  - {t: CTRL, h: sticky}
+  - {t: ALT, h: sticky}
+  - {t: WIN, h: sticky}
   - '-'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Sys:
@@ -162,7 +162,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '*'
-  - '*'
+  - {t: ▽, type: trans}
   - '&bootloader'
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -175,12 +175,12 @@ layers:
   - {t: ▽, type: trans}
   - '&sys_reset'
   - '&sys_reset'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -212,6 +212,15 @@ combos:
 - p: [4, 3]
   k: +
   l: [Def]
+- p: [21, 23]
+  k: LC(X)
+  l: [Def, Nav, Num]
+- p: [21, 22]
+  k: LC(INS)
+  l: [Def, Nav, Num]
+- p: [22, 23]
+  k: PASTE
+  l: [Def, Nav, Num]
 - p: [24, 23]
   k: '-'
   l: [Def]
