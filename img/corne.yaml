@@ -31,8 +31,8 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ESC, h: Sys, s: TAB}
   - {t: '&num_dance', h: Fn}
+  - {t: ESC, h: Sys, s: TAB}
   - {t: SPACE, h: Num, s: '&dot_spc'}
   - {t: RET, h: Nav}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -142,8 +142,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,8 +179,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
