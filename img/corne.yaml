@@ -31,8 +31,8 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: '&num_dance', h: Fn}
   - {t: ESC, h: Sys, s: TAB}
+  - '&smart_num 3 0 0'
   - {t: SPACE, h: Num, s: '&dot_spc'}
   - {t: RET, h: Nav}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -81,10 +81,10 @@ layers:
   - TAB_NEW
   - '&swapper'
   - {t: ▽, type: trans}
-  - PG DN
-  - PG UP
-  - HOME
-  - END
+  - FZLEFT
+  - FZRIGHT
+  - FZWIN
+  - CANCEL
   - {t: WIN, h: sticky}
   - {t: ALT, h: sticky}
   - {t: CTRL, h: sticky}
@@ -95,16 +95,16 @@ layers:
   - UP
   - RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - CANCEL
   - COMPOSE
+  - PG DN
+  - PG UP
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - {t: DSK_PRV, h: RSHFT}
+  - {t: DSK_NXT, h: ALT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,32 +117,32 @@ layers:
   - F8
   - F9
   - {t: ▽, type: trans}
-  - FZLEFT
-  - {t: ▽, type: trans}
-  - FZWIN
-  - FZRIGHT
   - MUTE
+  - PP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: F11, h: WIN}
   - {t: F4, h: ALT}
   - {t: F5, h: CTRL}
   - {t: F6, h: LSHFT}
   - {t: ▽, type: trans}
-  - {t: DSK_PRV, h: RSHFT}
-  - {t: ▽, type: trans}
-  - {t: DSK_NXT, h: ALT}
-  - {t: ▽, type: trans}
   - VOL UP
+  - PREV
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F10
   - F1
   - F2
   - F3
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PP
-  - PREV
-  - NEXT
   - VOL DN
-  - {type: held}
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,8 +179,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
