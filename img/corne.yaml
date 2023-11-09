@@ -52,7 +52,7 @@ layers:
   - {t: ALT, h: sticky}
   - {t: CTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - '&kp LS(LA(TAB) )'
+  - APP_PRV
   - LEFT
   - DOWN
   - UP
