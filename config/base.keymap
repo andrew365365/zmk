@@ -54,7 +54,6 @@
 #define FZRIGHT LC(LA(LG(RIGHT)))
 #define FZWIN   LG(PG_UP)            // desktop manager
 #define MEH     LC(LS(LALT))
-#define PASTE   LS(INS)
 #define COMPOSE K_CMENU
 #define CANCEL  K_CANCEL             // cancel caps-word, num-word and smart-mouse
 
@@ -87,57 +86,57 @@
             &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
             &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SQT
             &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &comma_morph  &dot_morph    &qmark_morph
-                                        &lt_esc SYS 0 &lt_spc NAV 0 &lt FN RET        SMART_NUM     &smart_shft   &bs_del
+                                        SMART_NUM     &lt_esc SYS 0 &lt_spc NAV 0     &lt FN RET    &smart_shft   &bs_del
       >;
     };
 
     nav_layer {
       label = "Nav";
       bindings = <
-            &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          &kp PG_UP     &kp PG_DN     &kp HOME      &kp END       ___         
-            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp DEL      
-            ___           ___           &kp K_REDO    &kp K_UNDO    &kp ESC           ___           &kp CUT       &kp COPY      &kp PASTE     &kp COMPOSE
-                                        ___           ___           ___               ___           ___           &kp CANCEL
+            &kp LC(W) &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)     &swapper          ___           &kp PG_DN     &kp PG_UP     &kp HOME      &kp END
+            &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp LS(LA(TAB))   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     ___
+            ___           ___           &kp LC(Z)   &kp LC(Y)       &kp ESC           ___           ___           ___           &kp CANCEL    &kp COMPOSE
+                                        ___           ___           ___               ___           ___           ___
       >;
     };
 
     fn_layer {
       label = "Fn";
       bindings = <
-            &kp F12       &kp F7        &kp F8        &kp F9        ___               ___           &kp FZLEFT    &kp FZRIGHT   &kp FZWIN     &win_sleep   
-            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               ___           DSK_PREV      DSK_NEXT      ___           ___
-            &kp F10       &kp F1        &kp F2        &kp F3        ___               &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  ___           ___
-                                        ___           ___           ___               &kp C_PP      &kp C_PREV    &kp C_NEXT                               
+            &kp F12       &kp F7        &kp F8        &kp F9        ___               &kp FZLEFT    ___           &kp FZWIN     &kp FZRIGHT   &kp C_MUTE
+            &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 ___               DSK_PREV      ___           DSK_NEXT      ___           &kp C_VOL_UP
+            &kp F10       &kp F1        &kp F2        &kp F3        ___               ___           &kp C_PP      &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN
+                                        ___           ___           ___               ___           ___           ___
     >;
-    };
+    };1
 
     num_layer {
       label = "Num";
       bindings = <
-            &kp ESC       &kp N7        &kp N8        &kp N9        &kp STAR          ___           ___           ___           ___           ___
-            &kp TAB       &kp N4        &kp N5        &kp N6        &kp PLUS          ___           &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
-            &kp RET       &kp N1        &kp N2        &kp N3        &kp FSLH          ___           ___           ___           ___           ___
-                                        &kp DOT       &kp N0        &kp MINUS         ___           ___           ___
+            &kp PLUS      &kp N7        &kp N8        &kp N9        &kp FSLH         ___           ___           ___           ___           ___
+            &kp AT        &kp N4        &kp N5        &kp N6        &kp N0           ___           &sk RSHFT     &sk LCTRL     &sk LALT      &sk LGUI
+            &kp MINUS     &kp N1        &kp N2        &kp N3        &kp STAR         ___           ___           ___           ___           ___
+                                        ___           ___           ___              ___           ___           ___
       >;
     };
 
     sys_layer {
       label = "Sys";
       bindings = <
-                                      _BT_SEL_KEYS_                                   ___           ___           ___           ___           ___          
-            ___           ___           &kp STAR      &kp STAR      &bootloader       &bootloader   ___           ___           ___           ___          
-            ___           ___           ___           ___           &sys_reset        &sys_reset    ___           ___           ___           ___          
-                                        ___           ___           ___               ___           ___           ___                                      
+                                      _BT_SEL_KEYS_                                   ___           ___           ___           ___           ___
+            ___           ___           &kp STAR      ___           &bootloader       &bootloader   ___           ___           ___           ___
+            ___           ___           ___           ___           &sys_reset        &sys_reset    ___           ___           ___           ___
+                                        ___           ___           ___               ___           ___           ___
       >;
     };
 
     // mouse_layer {
     //   label = "Mouse";
     //   bindings = <
-    //         ___           ___           ___           ___           ___               ___           U_WH_D        U_MS_U         U_WH_U       ___          
-    //         ___           ___           &kp STAR      &kp STAR      ___               ___           U_MS_L        U_MS_D         U_MS_R       ___          
-    //         ___           ___           ___           ___           ___               ___           ___           ___            ___          ___          
-    //                                     U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2                                         
+    //         ___           ___           ___           ___           ___               ___           U_WH_D        U_MS_U         U_WH_U       ___
+    //         ___           ___           &kp STAR      &kp STAR      ___               ___           U_MS_L        U_MS_D         U_MS_R       ___
+    //         ___           ___           ___           ___           ___               ___           ___           ___            ___          ___
+    //                                     U_BTN1         U_BTN3       U_BTN2            U_BTN1        U_BTN3        U_BTN2
     // >;
    // };
  };

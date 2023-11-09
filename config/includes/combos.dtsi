@@ -75,9 +75,11 @@
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
-
 /* Horizontal combos - left hand */
 ZMK_COMBO(plus,  &kp PLUS,      LT0 LT1,     DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(copy,  &kp LC(INS),   LB3 LB2,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(minus, &kp MINUS,     LB0 LB1,     DEF, COMBO_TERM_SLOW)
 /* Horizontal combos - right hand */
 ZMK_COMBO(pipe,  &kp PIPE,      RB0 RB1,     DEF, COMBO_TERM_SLOW)
