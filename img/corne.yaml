@@ -31,12 +31,49 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: '&num_dance', h: Num}
+  - {t: '&num_dance', h: Fn}
   - {t: ESC, h: Sys, s: TAB}
-  - {t: SPACE, h: Nav, s: '&dot_spc'}
-  - {t: RET, h: Fn}
+  - {t: SPACE, h: Num, s: '&dot_spc'}
+  - {t: RET, h: Nav}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
+  Num:
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - \
+  - $
+  - '`'
+  - '#'
+  - {t: ▽, type: trans}
+  - '@'
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - '='
+  - {t: RSHFT, h: sticky}
+  - {t: CTRL, h: sticky}
+  - {t: ALT, h: sticky}
+  - {t: WIN, h: sticky}
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - '%'
+  - _
+  - ^
+  - '~'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Nav:
   - TAB_CLS
   - TAB_PRV
@@ -70,8 +107,8 @@ layers:
   - COMPOSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Fn:
@@ -105,43 +142,6 @@ layers:
   - PREV
   - NEXT
   - VOL DN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Num:
-  - +
-  - '7'
-  - '8'
-  - '9'
-  - /
-  - \
-  - $
-  - '`'
-  - '#'
-  - {t: ▽, type: trans}
-  - '@'
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - '='
-  - {t: RSHFT, h: sticky}
-  - {t: CTRL, h: sticky}
-  - {t: ALT, h: sticky}
-  - {t: WIN, h: sticky}
-  - '-'
-  - '1'
-  - '2'
-  - '3'
-  - '*'
-  - '%'
-  - _
-  - {t: ▽, type: trans}
-  - ^
-  - '~'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,7 +188,7 @@ layers:
 combos:
 - p: [4, 3]
   k: ESC
-  l: [Def, Nav, Num, Fn, Sys]
+  l: [Def, Num, Fn, Nav, Sys]
 - p: [5, 6]
   k: '&'
   l: [Def]
@@ -198,9 +198,6 @@ combos:
 - p: [7, 8]
   k: '}'
   l: [Def]
-- p: [15, 16]
-  k: '='
-  l: [Def, Num]
 - p: [16, 17]
   k: (
   l: [Def]
