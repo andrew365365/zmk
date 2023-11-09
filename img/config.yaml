@@ -290,4 +290,14 @@ parse_config:
     "K_CANCEL": "CANCEL"
     "LG(LC(LEFT))": "DSK_PRV"
     "LG(LC(RIGHT))": "DSK_NXT"
-    zmk_combos: {}
+    "LC(W)": "TAB_CLS"
+    "LS(LC(TAB))": "TAB_PRV"
+    "LC(TAB)": "TAB_NXT"
+    "LC(T)": "TAB_NEW"
+    "LGUI": "WIN"
+    "LALT": "ALT"
+    "LCTRL": "CTRL"
+    "LSHT": "SHIFT"
+    "LS(LA(TAB) )": "APP_PRV"
+    "&swapper": "APP_NXT"
+zmk_combos: {}
