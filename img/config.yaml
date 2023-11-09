@@ -300,4 +300,4 @@ parse_config:
     "LSHT": "SHIFT"
     "LS(LA(TAB) )": "APP_PRV"
     "&swapper": "APP_NXT"
-zmk_combos: {}
+  zmk_combos: {}
